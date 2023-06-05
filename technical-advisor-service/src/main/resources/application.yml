@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: TECHNICAL-ADVISOR-SERVICE
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+  datasource:
+    url: jdbc:postgresql://localhost:5432/technicaladvisor
+    username: postgres
+    password: root
+    driverClassName: org.postgresql.Driver
+server:
+  port: 8082
