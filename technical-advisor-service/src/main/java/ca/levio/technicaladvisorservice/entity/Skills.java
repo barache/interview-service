@@ -3,14 +3,14 @@ package ca.levio.technicaladvisorservice.entity;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 
+import java.util.Collection;
 import java.util.UUID;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+
+import lombok.*;
 
 @Entity
-@Data
+@Getter
+@Setter
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
@@ -23,4 +23,7 @@ public class Skills {
   private UUID id;
   private String skill;
   private String levelOfExpertise;
+
+  @ManyToOne(targetEntity = TechnicalAdvisor.class)
+  private TechnicalAdvisor technicalAdvisor;
 }

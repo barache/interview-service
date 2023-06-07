@@ -1,4 +1,4 @@
-package ca.levio.technicaladvisorservice.utils;
+package ca.levio.interviewservice.utils;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
